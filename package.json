@@ -1,6 +1,6 @@
 {
   "name": "dsh-restart-yashua",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "一键重启 DeepSeek Harness：侧栏按钮、/restart 指令、harness_restart 工具共用同一套重启实现。One-click restart for DeepSeek Harness — sidebar button, /restart command and a harness_restart tool backed by the same implementation.",
   "type": "module",
   "main": "lib/index.js",
