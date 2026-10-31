@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "一键重启 Harness",
+    "description": "侧栏一个按钮重启 DeepSeek Harness：点击后先就地展开确认条，点「重启」才真的执行；也支持 /restart 指令与 harness_restart 工具。"
+  }
+}

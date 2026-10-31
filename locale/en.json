@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "One-click Harness Restart",
+    "description": "Restart DeepSeek Harness from a sidebar button: the click expands an inline confirmation first and only \"Restart\" proceeds. Also available as the /restart command and the harness_restart tool."
+  }
+}

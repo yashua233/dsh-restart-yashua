@@ -1,0 +1,7 @@
+# dsh-restart-yashua bundle patch
+#
+# 一行插入，不带 config：delayMs 等都有内置默认值。
+# 需要在 profile 的 cordis.patch.yml 里改时，用同样 id 覆盖即可。
+- insert:
+    - id: dsh-restart-yashua
+      name: 'dsh-restart-yashua'

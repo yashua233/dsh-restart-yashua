@@ -1,0 +1,70 @@
+{
+  "name": "dsh-restart-yashua",
+  "version": "1.0.13",
+  "description": "一键重启 DeepSeek Harness：侧栏按钮、/restart 指令、harness_restart 工具共用同一套重启实现。One-click restart for DeepSeek Harness — sidebar button, /restart command and a harness_restart tool backed by the same implementation.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "scripts",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CONTRIBUTING.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "restart",
+    "relaunch",
+    "sidebar",
+    "desktop"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    },
+    "compatibility": {
+      "dsh": "0.2.1-rc.5"
+    }
+  },
+  "dshTarget": "0.2.1-rc.5",
+  "license": "MIT",
+  "author": {
+    "name": "yashua233"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashua233/dsh-restart-yashua.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yashua233/dsh-restart-yashua/issues"
+  },
+  "homepage": "https://github.com/yashua233/dsh-restart-yashua#readme"
+}
